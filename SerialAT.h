@@ -3,6 +3,8 @@
 
 #include <SoftwareSerial.h>
 
+#define CRLF "\r\n"
+
 // Module roles
 #define SLAVE 0
 #define MASTER 1
@@ -23,9 +25,6 @@ class SerialAT: public SoftwareSerial
     void role(byte);
     uint32_t type();
     void type(uint32_t);
-
-  private:
-    static const String strTerm = "\r\n";
 };
 
 #endif
