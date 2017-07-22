@@ -1,6 +1,7 @@
 #ifndef SerialAT_h
 #define SerialAT_h
 
+#include <Arduino.h>
 #include <SoftwareSerial.h>
 
 #define CRLF "\r\n"
